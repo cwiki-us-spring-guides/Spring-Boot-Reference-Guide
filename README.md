@@ -22,7 +22,7 @@ GitHub 上有关 Spring 的项目：[https://github.com/cwiki-us-spring-guides](
 
 | 已发布的电子书 | 书名 | 链接 |
 | :--- | :--- | :--- |
-| GitBook | [Spring Boot 中文参考指南](https://docs.ossez.com/spring-boot-reference-guide-zh) | [https://cwiki-us.gitbook.io/spring-boot-reference-guide-zh](https://cwiki-us.gitbook.io/spring-boot-reference-guide-zh) |
+| GitBook | [Spring Boot 中文参考指南](https://docs.ossez.com/spring-boot-reference-guide-zh) | [https://docs.ossez.com/spring-boot-reference-guide-zh](https://cwiki-us.gitbook.io/spring-boot-reference-guide-zh) |
 
 [单击这里开始阅读](https://github.com/cwiki-us-spring-guides/Spring-Boot-Reference-Guide/tree/0c006c649649c55e6274aa4b29142c617a50d360/SUMMARY.md)
 
