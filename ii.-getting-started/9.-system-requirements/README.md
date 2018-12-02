@@ -9,5 +9,5 @@ Spring Boot 2.1.0.RELEASE 方需要 [Java 8 or 9](https://www.java.com/en/) 的�
 | Maven | 3.3+ |
 | Gradle | 4.4+ |
 
-**Note**：请尽量按照官方的要求安装 JDK。
+**Note**：请尽量按照官方的要求安装 JDK 版本。
 
