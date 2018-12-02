@@ -272,7 +272,7 @@
       * [43.4.2 自动配置模块](iv.-spring-boot-features/43.-creating-your-own-auto-configuration/43.4-creating-your-own-starter/43.4.2-autoconfigure-module.md)
       * [43.4.3 Starter模块](iv.-spring-boot-features/43.-creating-your-own-auto-configuration/43.4-creating-your-own-starter/43.4.3-starter-module.md)
   * [44. 接下来阅读什么](iv.-spring-boot-features/44.-what-to-read-next.md)
-* [V. Spring Boot执行器: Production-ready特性](v.-spring-boot-actuator/README.md)
+* [V. Spring Boot 执行器](v.-spring-boot-actuator/README.md)
   * [45. 开启production-ready特性](v.-spring-boot-actuator/45.-enabling-production-ready-features.md)
   * [46. 端点](v.-spring-boot-actuator/46.-endpoints/README.md)
     * [46.1 自定义端点](v.-spring-boot-actuator/46.-endpoints/46.1-customizing-endpoints.md)
