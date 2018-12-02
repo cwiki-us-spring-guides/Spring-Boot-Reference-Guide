@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Introduction](README.md)
-* [I. Spring Boot文档](i.-spring-boot-documentation/README.md)
+* [I. Spring Boot 文档](i.-spring-boot-documentation/README.md)
   * [1. 关于本文档](i.-spring-boot-documentation/1.-about-the-documentation.md)
   * [2. 获取帮助](i.-spring-boot-documentation/2.-getting-help.md)
   * [3. 第一步](i.-spring-boot-documentation/3.-first-steps.md)
