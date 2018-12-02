@@ -382,7 +382,7 @@
     * [64.8 理解Gradle插件是如何工作的](viii.-build-tool-plugins/64.-spring-boot-gradle-plugin/64.8-understanding-how-the-gradle-plugin-works.md)
     * [64.9 用 Gradle 将包发布到 Maven](viii.-build-tool-plugins/64.-spring-boot-gradle-plugin/64.9-publishing-artifacts-to-a-maven-repository-using-gradle/README.md)
       * [64.9.1 自定义 Gradle 用于管理的 pom](viii.-build-tool-plugins/64.-spring-boot-gradle-plugin/64.9-publishing-artifacts-to-a-maven-repository-using-gradle/64.9.1-zi-ding-yi-gradle-yong-yu-guan-li-de-pom.md)
-      * [64.9.2 Gradle 产生一个导入依赖管理的 pom](viii.-build-tool-plugins/64.-spring-boot-gradle-plugin/64.9-publishing-artifacts-to-a-maven-repository-using-gradle/64.9.2-gradle-chan-sheng-yi-ge-dao-ru-yi-lai-guan-li-de-pom.md)
+      * [64.9.2 Gradle 产生导入依赖管理的 pom](viii.-build-tool-plugins/64.-spring-boot-gradle-plugin/64.9-publishing-artifacts-to-a-maven-repository-using-gradle/64.9.2-gradle-chan-sheng-yi-ge-dao-ru-yi-lai-guan-li-de-pom.md)
     * [65. Spring Boot AntLib模块](viii.-build-tool-plugins/64.-spring-boot-gradle-plugin/65.-spring-boot-antlib-module/README.md)
       * [65.1. Spring Boot Ant任务](viii.-build-tool-plugins/64.-spring-boot-gradle-plugin/65.-spring-boot-antlib-module/65.1.-spring-boot-ant-tasks/README.md)
         * [65.1.1. spring-boot:exejar](viii.-build-tool-plugins/64.-spring-boot-gradle-plugin/65.-spring-boot-antlib-module/65.1.-spring-boot-ant-tasks/65.1.1.-spring-boot-exejar.md)
