@@ -342,7 +342,7 @@
     * [55.5 Google App Engine](vi.-bu-shu-dao-yun-duan/55.-deploying-to-the-cloud/55.5-google-app-engine.md)
   * [56. 安装Spring Boot应用](vi.-bu-shu-dao-yun-duan/56.-installing-spring-boot-applications/README.md)
     * [56.1 Unix/Linux服务](vi.-bu-shu-dao-yun-duan/56.-installing-spring-boot-applications/56.1-unix-and-linux-services/README.md)
-      * [\[56.1.1 安装为init.d服务\(System V\)\]\(VI. Deploying Spring Boot applications/56.1.1 Installation as an init](vi.-bu-shu-dao-yun-duan/56.-installing-spring-boot-applications/56.1-unix-and-linux-services/56.1.1-an-zhuang-wei-init.d-fu-wu-system-vvi.-deploying-spring-boot-applications56.1.1-installation.md)
+      * [56.1.1 安装为 init.d 服务](vi.-bu-shu-dao-yun-duan/56.-installing-spring-boot-applications/56.1-unix-and-linux-services/56.1.1-an-zhuang-wei-init.d-fu-wu-system-vvi.-deploying-spring-boot-applications56.1.1-installation.md)
       * [56.1.2 安装为Systemd服务](vi.-bu-shu-dao-yun-duan/56.-installing-spring-boot-applications/56.1-unix-and-linux-services/56.1.2-installation-as-a-systemd-service.md)
       * [56.1.3 自定义启动脚本](vi.-bu-shu-dao-yun-duan/56.-installing-spring-boot-applications/56.1-unix-and-linux-services/56.1.3-customizing-the-startup-script.md)
     * [56.2 Microsoft Windows服务](vi.-bu-shu-dao-yun-duan/56.-installing-spring-boot-applications/56.2-microsoft-windows-services.md)
