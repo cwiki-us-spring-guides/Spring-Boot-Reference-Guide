@@ -1,0 +1,12 @@
+# 20.5 远程应用
+
+Spring Boot开发者工具并不仅限于本地开发，在运行远程应用时你也可以使用一些特性。远程支持是可选的，通过设置`spring.devtools.remote.secret`属性可以启用它，例如：
+
+```text
+spring.devtools.remote.secret=mysecret
+```
+
+**注** 在远程应用上启用`spring-boot-devtools`有一定的安全风险，生产环境中最好不要使用。
+
+远程devtools支持分两部分：一个是接收连接的服务端端点，另一个是运行在IDE里的客户端应用。如果设置`spring.devtools.remote.secret`属性，服务端组件会自动启用，客户端组件必须手动启动。
+

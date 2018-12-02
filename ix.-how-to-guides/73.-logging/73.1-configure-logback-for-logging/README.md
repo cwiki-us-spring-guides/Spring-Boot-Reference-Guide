@@ -1,0 +1,23 @@
+# 73.1 配置Logback
+
+如果你将`logback.xml`放到classpath根目录下，那它将会被从这加载（或`logback-spring.xml`充分利用Boot提供的模板特性）。Spring Boot提供一个默认的基本配置，如果你只是设置日志级别，那你可以包含它，比如：
+
+```markup
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <include resource="org/springframework/boot/logging/logback/base.xml"/>
+    <logger name="org.springframework.web" level="DEBUG"/>
+</configuration>
+```
+
+如果查看spring-boot jar中的`base.xml`，你将会看到`LoggingSystem`为你创建的很多有用的系统属性，比如：
+
+* `${PID}`，当前进程id。
+* `${LOG_FILE}`，如果在Boot外部配置中设置了`logging.file`。
+* `${LOG_PATH}`，如果设置了`logging.path`（表示日志文件产生的目录）。
+* `${LOG_EXCEPTION_CONVERSION_WORD}`，如果在Boot外部配置中设置了`logging.exception-conversion-word`。
+
+Spring Boot也提供使用自定义的Logback转换器在控制台上输出一些漂亮的彩色ANSI日志信息（不是日志文件），具体参考默认的`base.xml`配置。
+
+如果Groovy在classpath下，你也可以使用`logback.groovy`配置Logback。
+

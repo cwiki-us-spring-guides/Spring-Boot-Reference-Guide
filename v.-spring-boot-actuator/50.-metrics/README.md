@@ -1,0 +1,41 @@
+# 50. 度量指标
+
+Spring Boot执行器包含一个支持'gauge'和'counter'级别的度量指标服务，'gauge'记录一个单一值，'counter'记录一个增量（增加或减少）。同时，Spring Boot提供一个[PublicMetrics](https://github.com/spring-projects/spring-boot/tree/v1.4.1.RELEASE/spring-boot-actuator/src/main/java/org/springframework/boot/actuate/endpoint/PublicMetrics.java)接口，你可以实现它，从而暴露以上两种机制不能记录的指标，具体参考[SystemPublicMetrics](https://github.com/spring-projects/spring-boot/tree/v1.4.1.RELEASE/spring-boot-actuator/src/main/java/org/springframework/boot/actuate/endpoint/PublicMetrics.java)。
+
+所有HTTP请求的指标都被自动记录，所以如果点击`metrics`端点，你可能会看到类似以下的响应：
+
+```javascript
+{
+    "counter.status.200.root": 20,
+    "counter.status.200.metrics": 3,
+    "counter.status.200.star-star": 5,
+    "counter.status.401.root": 4,
+    "gauge.response.star-star": 6,
+    "gauge.response.root": 2,
+    "gauge.response.metrics": 3,
+    "classes": 5808,
+    "classes.loaded": 5808,
+    "classes.unloaded": 0,
+    "heap": 3728384,
+    "heap.committed": 986624,
+    "heap.init": 262144,
+    "heap.used": 52765,
+    "mem": 986624,
+    "mem.free": 933858,
+    "processors": 8,
+    "threads": 15,
+    "threads.daemon": 11,
+    "threads.peak": 15,
+    "uptime": 494836,
+    "instance.uptime": 489782,
+    "datasource.primary.active": 5,
+    "datasource.primary.usage": 0.25
+}
+```
+
+此处，我们可以看到基本的`memory`，`heap`，`class loading`，`processor`和`thread pool`信息，连同一些HTTP指标。在该实例中，`root`\('/'\)，`/metrics` URLs分别返回`20`次，`3`次`HTTP 200`响应，同时可以看到`root` URL返回了`4`次`HTTP 401`（unauthorized）响应。双星号（`star-star`）来自于被Spring MVC `/**`匹配到的请求（通常为静态资源）。
+
+`gauge`展示了一个请求的最后响应时间，所以`root`的最后请求响应耗时`2毫秒`，`/metrics`耗时`3毫秒`。
+
+**注** 在该示例中，我们实际是通过HTTP的`/metrics`路径访问该端点的，这也就是响应中出现`metrics`的原因。
+

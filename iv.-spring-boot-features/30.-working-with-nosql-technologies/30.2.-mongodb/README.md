@@ -1,0 +1,4 @@
+# 30.2. MongoDB
+
+[MongoDB](http://www.mongodb.com/)是一个开源的NoSQL文档数据库，它使用类JSON格式的模式（schema）替换了传统的基于表的关系数据。Spring Boot为使用MongoDB提供了很多便利，包括`spring-boot-starter-data-mongodb`'Starter'。
+

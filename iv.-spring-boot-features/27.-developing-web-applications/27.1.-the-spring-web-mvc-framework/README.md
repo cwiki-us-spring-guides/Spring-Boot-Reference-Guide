@@ -1,0 +1,30 @@
+# 27.1. Spring Web MVC框架
+
+Spring Web MVC框架（通常简称为"Spring MVC"）是一个富“模型，视图，控制器”web框架， 允许用户创建特定的`@Controller`或`@RestController` beans来处理传入的HTTP请求，通过`@RequestMapping`注解可以将控制器中的方法映射到相应的HTTP请求。
+
+示例：
+
+```java
+@RestController
+@RequestMapping(value="/users")
+public class MyRestController {
+
+    @RequestMapping(value="/{user}", method=RequestMethod.GET)
+    public User getUser(@PathVariable Long user) {
+        // ...
+    }
+
+    @RequestMapping(value="/{user}/customers", method=RequestMethod.GET)
+    List<Customer> getUserCustomers(@PathVariable Long user) {
+        // ...
+    }
+
+    @RequestMapping(value="/{user}", method=RequestMethod.DELETE)
+    public User deleteUser(@PathVariable Long user) {
+        // ...
+    }
+}
+```
+
+Spring MVC是Spring框架的核心部分，详细信息可以参考[reference documentation](http://docs.spring.io/spring/docs/4.3.3.RELEASE/spring-framework-reference/htmlsingle#mvc)，[spring.io/guides](http://spring.io/guides)也有一些可用的指导覆盖Spring MVC。
+

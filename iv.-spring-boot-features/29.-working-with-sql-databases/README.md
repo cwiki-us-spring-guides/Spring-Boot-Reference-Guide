@@ -1,0 +1,4 @@
+# 29. 使用SQL数据库
+
+Spring框架为使用SQL数据库提供了广泛支持，从使用`JdbcTemplate`直接访问JDBC到完全的‘对象关系映射’技术，比如Hibernate。Spring Data提供了更高级的功能，直接从接口创建`Repository`实现，并根据约定从方法名生成查询。
+

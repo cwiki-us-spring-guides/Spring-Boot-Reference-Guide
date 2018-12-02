@@ -1,0 +1,29 @@
+# 73.2 配置Log4j
+
+如果[Log4j 2](http://logging.apache.org/log4j/2.x)出现在classpath下，Spring Boot会将其作为日志配置。如果你正在使用starters进行依赖装配，这意味着你需要排除Logback，然后包含log4j 2。如果不使用starters，除了添加Log4j 2，你还需要提供`jcl-over-slf4j`依赖（至少）。
+
+最简单的方式可能就是通过starters，尽管它需要排除一些依赖，比如，在Maven中：
+
+```markup
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-web</artifactId>
+</dependency>
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter</artifactId>
+    <exclusions>
+        <exclusion>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-logging</artifactId>
+        </exclusion>
+    </exclusions>
+</dependency>
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-log4j2</artifactId>
+</dependency>
+```
+
+**注** Log4j starters会收集好依赖以满足普通日志记录的需求（比如，Tomcat中使用`java.util.logging`，但使用Log4j 2作为输出），具体查看Actuator Log4j 2的示例，了解如何将它用于实战。
+
