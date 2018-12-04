@@ -9,7 +9,7 @@
   * [5. 了解Spring Boot特性](i.-spring-boot-documentation/5.-learning-about-spring-boot-features.md)
   * [6. 迁移到生产环境](i.-spring-boot-documentation/6.-moving-to-production.md)
   * [7. 高级主题](i.-spring-boot-documentation/7.-advanced-topics.md)
-* [II. 开始](ii.-getting-started/README.md)
+* [II. 开始使用](ii.-getting-started/README.md)
   * [8. Spring Boot介绍](ii.-getting-started/8.-introducing-spring-boot.md)
   * [9. 系统要求](ii.-getting-started/9.-system-requirements/README.md)
     * [9.1. Servlet容器](ii.-getting-started/9.-system-requirements/9.1.-servlet-containers.md)
